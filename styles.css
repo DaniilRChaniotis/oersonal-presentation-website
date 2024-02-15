@@ -1,0 +1,73 @@
+body {
+    font-family: monospace;
+    background-image:"Fly_Through_Formulas_Black.mp4" ;
+    display: auto;
+    
+}
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio:16/9){
+    .back-video{
+        width: 100%;
+        height:auto ;
+    }
+}
+@media (max-aspect-ratio:16/9){
+        .back-video{
+            width: auto;
+            height:100% ;
+        }   
+}
+.grid-container {
+    background:white;
+    opacity:50%;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px 200px 300px;
+    gap: 10px;
+    justify-items: stretch;
+    align-items: stretch;
+    border-radius: 10px;
+
+}
+.grid-container > div {
+    background: rgb(8, 8, 8);
+    text-align: center;
+    padding: 20px;
+    border: 5px solid whitesmoke;
+    border-radius: 10px;
+    opacity: 100%;
+}
+.grid-container > div:nth-child(1){
+    grid-column: 1 / span 2;
+    
+    
+
+}
+.grid-container > div:nth-child(2){
+    grid-column:  span 3;
+
+}
+.grid-container > div:nth-child(3){
+    grid-column:  span 1;
+
+}
+.grid-container > div:nth-child(4){
+    grid-column: 2 / span 3;
+
+}.grid-container > div:nth-child(5){
+    grid-column:  span 3;
+
+}
+.grid-container > div:nth-child(6){
+    grid-column:  span 3;
+
+}
